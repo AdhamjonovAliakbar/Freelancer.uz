@@ -265,4 +265,7 @@
     .reg_info button{
         width: 80%;
     }
+    .change_mod{
+        display: block;
+    }
 }

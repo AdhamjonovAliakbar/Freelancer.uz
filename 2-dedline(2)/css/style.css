@@ -27,6 +27,20 @@ nav .container {
     position: relative;
 }
 
+nav div {
+    display: flex;
+    align-items: center;
+}
+
+
+
+nav .container i {
+    font-size: 30px;
+    /* display: none; */
+    color: white;
+    margin-left: 14px;
+}
+
 nav img {
     width: 90px;
     border-radius: 50%;
@@ -111,7 +125,7 @@ nav ul a {
     display: none;
     position: absolute;
     top: 9px;
-    right: 10px;
+    right: 50px;
     border: none;
     border-radius: 6px;
 }
@@ -120,7 +134,7 @@ nav ul a {
     width: 100%;
     position: fixed;
     z-index: 2;
-    background-color: rgba(0, 0, 0, 0.36);
+    background-color: rgba(0, 0, 0, 0.54);
     height: 100vh;
     display: flex;
     align-items: center;
@@ -130,7 +144,7 @@ nav ul a {
 }
 
 #modal form {
-    top: 150px;
+    top: 260px;
     right: 0;
     position: absolute;
     background-color: white;
