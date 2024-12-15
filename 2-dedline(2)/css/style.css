@@ -24,6 +24,7 @@ nav .container {
     align-items: center;
     justify-content: space-between;
     padding: 10px 0px;
+    position: relative;
 }
 
 nav img {
@@ -38,18 +39,18 @@ nav h2 {
     font-weight: 800;
 }
 
-nav button {
+nav .btn {
     width: 180px;
     height: 48px;
     border: none;
     border-radius: 8px;
-    font-size: 14px;
+    font-size: 16px;
     color: darkblue;
     position: relative;
     overflow: hidden;
 }
 
-nav button::after {
+nav .btn::after {
     content: "Registratsiya";
     width: 0;
     height: 100%;
@@ -65,7 +66,7 @@ nav button::after {
     z-index: -1;
 }
 
-nav button:hover::after {
+nav .btn:hover::after {
     cursor: pointer;
     width: 100%;
     z-index: 1;
@@ -73,10 +74,10 @@ nav button:hover::after {
 
 
 .hero {
-    background-image: url("../img/maxresdefault.jpg");
+    background: url("../img/maxresdefault.jpg");
     background-repeat: no-repeat;
     background-size: 100%;
-    background-position:left top;
+    background-position: left top;
 }
 
 .hero .container {
@@ -84,6 +85,86 @@ nav button:hover::after {
     display: flex;
     align-items: center;
     justify-content: space-around;
+    position: relative;
+}
+
+nav ul {
+    display: flex;
+    gap: 35px;
+    list-style: none;
+}
+
+nav ul a {
+    font-size: 19px;
+    text-decoration: none;
+    text-transform: capitalize;
+    color: white;
+    font-weight: 400;
+    transition: all .3s ease;
+}
+
+#list_menu {
+    width: 46px;
+    height: 46px;
+    background: black;
+    color: white;
+    display: none;
+    position: absolute;
+    top: 9px;
+    right: 10px;
+    border: none;
+    border-radius: 6px;
+}
+
+#modal {
+    width: 100%;
+    position: fixed;
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.36);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* position: relative; */
+    display: none;
+}
+
+#modal form {
+    top: 150px;
+    right: 0;
+    position: absolute;
+    background-color: white;
+    width: 90%;
+    height: 320px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+}
+
+#modal form ul {
+    list-style: none;
+}
+
+#modal form ul a {
+    line-height: 35px;
+    color: black;
+    font-size: 20px;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+#modal form button {
+    background-color: blue;
+    color: white;
+    width: 100px;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+}
+
+nav ul a:hover {
+    color: goldenrod;
 }
 
 .hero_info {
@@ -201,6 +282,7 @@ nav button:hover::after {
     color: goldenrod;
     padding: 140px 10px 10px;
     text-align: left;
+    width: 100%;
 }
 
 .block .box:hover .box_info {
@@ -483,7 +565,7 @@ footer {
 }
 
 .reg_info {
-    width: 55%;
+    width: 50%;
     background-color: lightblue;
     padding: 25px 0px;
     border-radius: 20px;
@@ -524,7 +606,13 @@ footer {
     padding: 10px 20px;
     border: 1.5px solid darkblue;
     outline: none;
-
+    border-radius: 10px;
     transform: translate(-50%);
 
+}
+
+.nav_title {
+    color: white;
+    font-size: 40px;
+    line-height: 56px;
 }

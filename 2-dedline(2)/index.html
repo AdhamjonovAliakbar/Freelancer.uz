@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Asosiy sahifa</title>
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/media.css">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css"
         integrity="sha512-9xKTRVabjVeZmc+GUW8GgSmcREDunMM+Dt/GrzchfN8tkwHizc5RP4Ok/MXFFy5rIjJjzhndFScTceq5e6GvVQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -16,12 +18,29 @@
         <nav>
             <div class="container">
                 <a href="#"> <img src="./img/logo1.jpg" alt=""></a>
-                <h2>Freelancer.uz</h2>
-                <a href="./registratsiya.html"><button>Registratsiya</button></a>
+                <ul>
+                    <li><a href="#section1">Xizmatlar</a></li>
+                    <li><a href="#section2">E'lonlar</a></li>
+                    <li><a href="#section3">Portfoliya</a></li>
+                </ul>
+                <a href="./registratsiya.html"><button class="btn">Registratsiya</button></a>
             </div>
+           
+            <button id="list_menu"> <i class="fa-solid fa-bars"></i></button>
+            
         </nav>
         <div class="hero">
             <div class="container">
+                <div id="modal">
+                <form action="">
+                    <ul>
+                        <li><a href="#section1">Xizmatlar</a></li>
+                        <li><a href="#section2">E'lonlar</a></li>
+                        <li><a href="#section3">Portfoliya</a></li>
+                        <li><a href="./registratsiya.html">Registratsiya</a></li>
+                    </ul>
+                </form>
+                </div>
                 <div class="hero_info">
                     <h2>Freelancer.uz</h2>
                     <p>Bizning sayt sizga Platforma veb-dizayn va dasturiy ta'minotni ishlab chiqishdan tortib, mijozlarga xizmat ko'rsatish va buxgalteriya hisobigacha bo'lgan keng doiradagi toifalarni taqdim etadi.
@@ -36,7 +55,7 @@
         </div>
     </header>
     <main>
-        <section class="section1">
+        <section id="section1" class="section1">
             <div class="container">
                 <h2 class="section_title">Bizning Xizmatlar</h2>
                 <div class="block">
@@ -65,7 +84,7 @@
                 <button>Yana Ko'proq Ko'rish</button>
             </div>
         </section>
-        <section class="section2">
+        <section id="section2" class="section2">
             <div class="container">
                 <h2 class="sec2_title">So'ngi e'lonlar</h2>
 
@@ -95,7 +114,7 @@
                 </div>
             </div>
         </section>
-        <section class="section3">
+        <section id="section3" class="section3">
             <div class="container">
                 <h2 class="sec3_title">Portfoliya Joylash</h2>
                 <div class="portfolio">
@@ -141,6 +160,7 @@
             </div>
         </div>
     </footer>
+    <script src="./js/script.js"></script>
 </body>
 
 </html>
